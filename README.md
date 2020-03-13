@@ -23,15 +23,16 @@ cp chromedriver /usr/local/bin/chromedriver
 
 # Try it
 
-Checkout the repo then install it
-
 ```
 npm install frontend-master-downloader -g
 ```
-Use the command by doing
+
+# Set Cookie
+Your first need to set a cookie. Use the [chrome or firefox extension EditCookie](http://www.editthiscookie.com/).
+Log to frontendmaster with your login and password and use this extension to export the cookie. Save in the current directory to the name `cookie.json`
 
 ```
-frontend-master-downloader -u <USERNAME> -p <PASSWORD> -c <COURSE_NAME> -i <COURSE_ID(optional)> -d <DIRECTORY(optional)>
+frontend-master-downloader -u <COURSE_NAME> -i <COURSE_ID(optional)> -d <DIRECTORY(optional)>
 ```
 Directory is optional, if not provided, the script will create a Download directory in the current location.
 
