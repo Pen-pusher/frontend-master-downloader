@@ -29,7 +29,7 @@ npm install frontend-master-downloader -g
 
 # Set Cookie
 Your first need to set a cookie. Use the [chrome or firefox extension EditCookie](http://www.editthiscookie.com/).
-Log to frontendmaster with your login and password and use this extension to export the cookie. Save in the current directory to the name `cookie.json`
+Log to frontendmaster with your login and password and use this extension to export the cookie. Save in the current directory to the name `cookies.json`
 
 ```
 frontend-master-downloader -u <COURSE_NAME> -i <COURSE_ID(optional)> -d <DIRECTORY(optional)>
