@@ -39,6 +39,6 @@ Directory is optional, if not provided, the script will create a Download direct
 # Example
 
 ```
-frontend-master-downloader -u sepiropht -p mypassword -c leveldb-crypto
+frontend-master-downloader -c leveldb-crypto
 
 ```
