@@ -7,19 +7,17 @@ const crawler = require("./crawler");
 const downloader = require("./downloader");
 
 args
-  .option("user", "user")
-  .option("pass", "password")
   .option("courses", 'names of course ex: "git-in-depth"')
   .option("id", "only one video")
   .option("directory", "directory of destination");
 
 const flags = args.parse(process.argv);
-let { user, pass, courses, directory } = flags;
+let { courses, directory } = flags;
 
 directory = directory || "DownLoads/";
 
-if (!courses || !user || !pass) {
-  console.log(chalk.red("You must provide username, password and course \n"));
+if (!courses) {
+  console.log(chalk.red("You must proide course \n"));
   return;
 }
 
